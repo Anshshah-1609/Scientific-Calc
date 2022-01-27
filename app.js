@@ -30,14 +30,19 @@ function Backspace(){
 }
 
 function plusMinus(value){
+	document.getElementById("equal").disabled = true;
 	if(value == "modeX"){
 		let a = (history.innerHTML).substr(0,1);
 		if(a == "-")
 		{
-			history.innerHTML = 0 - history.innerHTML;
+			let mode = history.innerHTML;
+			history.innerHTML = `|${mode}|`;
+			result.innerHTML = 0 - mode;
 		}
 		else{
-			history.innerHTML = history.innerHTML;
+			let mode = history.innerHTML;
+			history.innerHTML = `|${history.innerHTML}|`;
+			result.innerHTML = mode;
 		}
 	}
 	else{
