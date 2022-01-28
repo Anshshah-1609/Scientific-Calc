@@ -5,10 +5,6 @@ let result = document.getElementById("output-value");
 let store = 0;
 
 function Num(value){
-	if(history.innerHTML == 0)
-	{
-		history.innerHTML = "";
-	}
 	if(value == "10**" || value == "e**"){
 		history.innerHTML = value + history.innerHTML;
 	}
