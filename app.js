@@ -112,7 +112,7 @@ function Function(){
 		case "acosh":
 			let fun3 = history.innerHTML;
 			history.innerHTML = `acosh (${fun3})`;
-			result.innerHTML = Math.abs(fun3);
+			result.innerHTML = Math.acosh(fun3);
 			break;
 		case "asin":
 			let fun4 = history.innerHTML;
