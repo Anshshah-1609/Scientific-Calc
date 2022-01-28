@@ -100,16 +100,24 @@ function Function(){
 	let x = document.getElementById("Function").value;
 	switch(x){
 		case "abs":
-			result.innerHTML = Math.abs(history.innerHTML);
+			let fun1 = history.innerHTML;
+			history.innerHTML = `abs (${fun1})`;
+			result.innerHTML = Math.abs(fun1);
 			break;
 		case "acos":
-			result.innerHTML = Math.acos(history.innerHTML);
+			let fun2 = history.innerHTML;
+			history.innerHTML = `acos (${fun2})`;
+			result.innerHTML = Math.acos(fun2);
 			break;
 		case "acosh":
-			result.innerHTML = Math.acosh(history.innerHTML);
+			let fun3 = history.innerHTML;
+			history.innerHTML = `acosh (${fun3})`;
+			result.innerHTML = Math.abs(fun3);
 			break;
 		case "asin":
-			result.innerHTML = Math.asin(history.innerHTML);
+			let fun4 = history.innerHTML;
+			history.innerHTML = `asin (${fun1})`;
+			result.innerHTML = Math.asin(fun1);
 			break;
 	}
 }
