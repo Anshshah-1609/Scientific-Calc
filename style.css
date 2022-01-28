@@ -14,7 +14,7 @@ button{
 }
 button:hover,select:hover{
 	opacity: 0.6;
-	color: green;
+	color: red;
 }
 button:active,select:active{
 	transform: translateY(3px);
@@ -40,7 +40,7 @@ select{
 	padding-bottom: 0px;
 }
 #history-value{
-	font-size: 20px;
+	font-size: 19px;
 }
 #output{
 	padding-top: 0px;
@@ -62,5 +62,3 @@ select{
 #result:hover{
 	border: 2px solid grey;
 }
-
-
