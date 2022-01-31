@@ -5,8 +5,10 @@ let result = document.getElementById("output-value");
 let store = 0;
 
 function Num(value){
-	if(value == "10**" || value == "e**"){
-		history.innerHTML = value + history.innerHTML;
+	if(result.innerHTML != "")
+	{
+		history.innerHTML = result.innerHTML + value;
+		result.innerHTML = "";
 	}
 	else{
 		history.innerHTML += value;
